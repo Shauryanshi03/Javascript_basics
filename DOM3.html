@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">Hi</h1>
+    <h2 class="hh">Hello</h2>
+
+    <div id="d">Red</div>
+    <div id="dd">Green</div>
+    <div id="ddd">Blue</div>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        /*let red=document.getElementById("d");
+        red.classList.toggle("highlight");
+        let green=document.getElementById("dd").style.backgroundColor="green";
+        let blue=document.getElementById("ddd").style.backgroundColor="blue";
+
+        //let head1=document.querySelector("#h");
+        //document.write(head1);
+
+        let head2=document.querySelector(".hh");
+        document.write(head2);*/
+
+        let head=document.getElementById("h");
+        let b=document.getElementById("btn");
+        b.addEventListener("click",function()
+        {
+            head.innerHTML="Welcome";
+        });
+
+    </script>
+</body>
+</html>

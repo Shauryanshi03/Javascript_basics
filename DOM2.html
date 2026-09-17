@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">Learning DOM in JavaScript</h1>
+    <h5 id="hh">Namaste Everyone!</h5>
+    <script>
+        let name=document.getElementById("h").innerText
+        document.write(name);
+
+        let p=document.createElement("h2")
+        p.innerText="Hello Everyone!"
+        console.log(p);
+        
+        let q=document.createElement("p")
+        q.innerHTML="My name is Shauryanshi Tripathi. I am a CS student."
+        console.log(q);
+
+        let heading=document.getElementById("hh")
+        heading.remove();
+        console.log(heading);
+
+        //let head=document.getElementById("h")
+        //head.remove();
+
+        let s=document.getElementById("h").style.color="pink"
+        s.textContent="Learning DOM";
+        console.log(s);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object in JavaScript</h1>
+    <h2>Object by Literal Method</h2>
+
+    <script>
+    let student={id:201,Name:"Raman",RollNo:30,Branch:"CS"}
+    document.write(student.Name," ",student.id)
+
+    document.write("<br>"+Object.keys(student))
+    document.write("<br>"+Object.values(student))
+    document.write("<br>"+Object.getPrototypeOf(student))
+
+    Object.freeze(student);
+    document.write("<br>"+Object.isFrozen(student))
+    </script>
+</body>
+</html>

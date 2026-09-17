@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="prime(10)">Click Here</button>
+    <script>
+        function prime(n){
+        let i=2;
+        while(i<n){
+            if(n%i==0){
+                alert("Number is not prime");
+                return;
+            }
+            i++;
+        }
+        alert("Number is prime");
+    }
+    </script>
+</body>
+</html>
