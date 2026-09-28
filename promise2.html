@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*console.log('A')
+        setTimeout(function(){
+            console.log('B')
+        },2000)
+        setTimeout(function(){
+            console.log('C')
+        },5000)*/
+       /* console.log("ordered food")
+        setInterval(function(){
+            console.log("preparing")
+        },2000)
+        console.log("served")*/
+
+        //PROMISE CHAINING
+        function getuser(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    resolve({
+                        id:101,
+                        name:"Rahul"
+                    });
+                },2000);
+            });
+        }
+
+        getuser()
+        .then((user)=>{
+            console.log(user);
+            return user.id;
+        });
+    </script>
+</body>
+</html>

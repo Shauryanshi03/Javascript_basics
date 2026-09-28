@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2nd method to make function
+        /*let sum=()=>{
+            alert("Hello")
+        }
+        sum()*/
+
+        let arr=[{id:101,name:"Michael"},{id:201,name:"Tom"},{id:301,name:"Jerry"}];
+        console.log(arr[0].id);
+
+        let obj={id:101,name:"Jerry",subjects:["C","python","dbms","toc","dsa"]}
+        console.log(obj.subjects[0])
+
+        let employee={id:201,name:"raman",address:{city:"lucknow",district:"ayodhya"}}
+        console.log(employee.address.city)
+
+        let flowers=["lotus","sunflower","rose"]
+        let[x,y,z]=flowers
+        console.log(x)
+
+        let name=["rahul","riya","aman"]
+        let[name1,name2,name3]=name
+        console.log(name2,name3)
+
+        //Spread Operator (...)
+        let student={name:"rahul",rollno:10}
+        let newstudent={...student,city:"lucknow"}
+        console.log(newstudent)
+
+    </script>
+</body>
+</html>

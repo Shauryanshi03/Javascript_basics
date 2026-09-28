@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sum()">Click</button>
+    <script>
+        let name="Tom"; // or 'Tom' or `Tom` all are string
+        console.log(typeof name);
+
+        let name1="Michael";
+        console.log(name1[4]);
+        console.log(name1.slice(2));
+
+        let name2=" HELLO ";
+        console.log(name2.toLowerCase());
+        console.log(name2.trim());
+
+        let mytext="This is my first JavaScript class."
+        console.log(mytext.startsWith("T"));
+        console.log(mytext.endsWith("class."));
+
+        /*let a=parseInt(prompt("Enter your first number"));
+        let b=parseInt(prompt("Enter your second number"));
+
+        function sum(){
+            alert(a+b)
+        }*/
+
+        let num=100;
+        let result=String(num);
+        console.log(result);
+        console.log(typeOf(result));
+
+        let myname="tom";
+        let data=`Hello my name is ${myname}`;
+        console.log(data);
+    </script>
+</body>
+</html>

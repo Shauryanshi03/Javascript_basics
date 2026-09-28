@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let p=new Promise((resolve,reject)=>{
+            //resolve("this state is successfull")
+            reject("this is failure state")
+        })
+        
+        p.then((result)=>{       //to display the message of resolve state use then
+            console.log(result)
+        });
+        p.catch(function(result){  //to display the message of reject state use catch
+            console.log(result)
+        })*/
+
+        let pizzapromise=new Promise((resolve,reject)=>{
+            //resolve("pizza is ready")
+            reject("pizza is not ready")
+        })
+        pizzapromise.then((r)=>{
+            console.log(r)
+        })
+        pizzapromise.catch((r)=>{
+            console.log(r)
+        })
+
+        let s=new Promise((resolve,reject)=>{
+            resolve("you are selected")
+            reject("you are not selected")
+        })
+        s.then((res)=>{
+            console.log(res)
+        })
+        s.catch(function(res){
+            console.log(res)
+        })
+
+        let ques=new Promise((resolve,reject)=>{
+            resolve("your answer is right")
+            reject("your answer is wrong")
+        })
+        ques.then((result)=>{
+            console.log(result)
+        })
+        ques.catch((result)=>{
+            console.log(result)
+        })
+
+        let a=new Promise((resolve,reject)=>{ 
+            resolve("you are in top 3")
+            reject("you are not in top 3")
+        })
+        a.then((r)=>{           //r is just a parameter given by user
+            console.log(r)
+        })
+        a.catch((r)=>{
+            console.log(r)
+        })
+        a.finally(()=>{
+            console.log("reached")
+        })
+    </script>
+</body>
+</html>
